@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: #16DB65;
+    background-color: #16DB65;
     height: calc(100vh - 164px);
     color: black;
     font-family: 'Lato';
@@ -37,22 +37,59 @@ body {
     color: white;
 }
 
+.btn-white {
+    background-color: white;
+    color: black;
+}
+
+.btn-white:hover,
+.btn-white:active,
+.btn-white:focus {
+    background-color: black;
+    color: white !important;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: white;
+    color: black;
 }
 
 .text-black {
     color: #000 !important;
 }
 
+.text-white {
+    color: white !important;
+}
+
 .border-black {
     border: 1px solid black !important;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.dropdown-menu {
+    background-color: black;
+}
+
+.dropdown-item {
+    background-color: black;
+    color: white;
+}
+
+.navbar-toggler {
+    background-color: white;
 }
 
 /* -------------------------------- Media Queries */
