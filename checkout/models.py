@@ -29,7 +29,7 @@ class Order(models.Model):
 
     def update_total(self):
         """ Update total each time an item is added """
-        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
+        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
         if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
             self.delivery_charge = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
         else:
