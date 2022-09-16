@@ -125,6 +125,10 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+#delivery-banner {
+    background-color: #16DB65;
+}
+
 /* Toasts */
 
 .message-container {
