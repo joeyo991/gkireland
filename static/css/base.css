@@ -127,6 +127,7 @@ a.category-badge > span.badge:hover {
 
 #delivery-banner {
     background-color: #16DB65;
+    border-bottom: 1px solid black;
 }
 
 /* Toasts */
