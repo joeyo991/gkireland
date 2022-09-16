@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #16DB65;
+    background-color: white;
     height: calc(100vh - 164px);
     color: black;
     font-family: 'Lato';
