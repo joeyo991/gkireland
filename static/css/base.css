@@ -8,6 +8,41 @@ body {
     height: calc(100vh - 164px);
     color: black;
     font-family: 'Lato';
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.welcome-div {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+    background-color: rgba(22, 219, 101, .25);
+}
+
+.footer {
+    height: 150px;
+    position: relative;
+    bottom: 0;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 10px;
+    padding: 10px;
+    color: black;
 }
 
 /* from Bulma */
@@ -58,6 +93,10 @@ body {
 .btn-black:focus {
     background: white;
     color: black;
+}
+
+.badge-black {
+    background-color: black;
 }
 
 .text-black {
@@ -262,3 +301,4 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 }
+
