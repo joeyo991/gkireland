@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse, HttpResponse, get_object_or_404)
 from django.contrib import messages
 
 from products.models import Product
@@ -13,7 +14,7 @@ def view_basket(request):
 
 def add_to_basket(request, item_id):
     """ Add a quantity of a specific product to the shopping basket """
-    
+
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
