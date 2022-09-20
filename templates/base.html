@@ -142,16 +142,15 @@
     {% block content %}
     {% endblock %}
 
-    {% block page_footer %}
-        {% include 'includes/footer.html' %}
-    {% endblock %}
-
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
     {% endblock %}
 
+    {% block page_footer %}
+        {% include 'includes/footer.html' %}
+    {% endblock %}
     
   </body>
 </html>
