@@ -1,1 +1,1 @@
-web: gunicorn gkireland.wsgi.application
+web: gunicorn gkireland.wsgi:application
