@@ -33,7 +33,6 @@ body {
     left: 0;
     position: fixed;
     z-index: -1;
-    background-color: rgba(22, 219, 101, .25);
 }
 
 .welcome-text {
