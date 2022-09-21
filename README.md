@@ -8,6 +8,8 @@ The live site can be accessed by this [link](https://gk-ireland.herokuapp.com/).
 
 GK Ireland is an online store that sells goalkeeper gloves and accessories.
 
+_*This site is for training purposes only, the company is fictional and no orders will be charged or products received.* _
+
 ## **User Experience Design**
 
 ### **Strategy**
@@ -280,9 +282,6 @@ I used this image for the home page because Gavin Bazunu is one of Ireand's best
 ![base.html validation](/readme-assets/base-validation.png)
 
 - These errors had no effect on the project and were because I was using Django.
-- There was in fact a title element in the head.
-
-![title proof](/readme-assets/title-proof.png)
 
 #### **Basket app html**
 
@@ -298,3 +297,244 @@ I used this image for the home page because Gavin Bazunu is one of Ireand's best
 
 ![checkout-buttons](/readme-assets/checkout-buttons.png)
 
+**product-image.html**
+
+![product-image](/readme-assets/product-image.png)
+
+**product-info.html**
+
+![product-info](/readme-assets/product-info.png)
+
+**quantity-form.html**
+
+![quantity-form](/readme-assets/quantity-form.png)
+
+
+### **checkout app html**
+
+**checkout-success.html**
+
+![checkout-success](/readme-assets/checkout-success.png)
+
+**checkout.html**
+
+![checkout](/readme-assets/checkouthtml.png)
+
+### **home app html**
+
+**index.html**
+
+![index](/readme-assets/index.png)
+
+### **products app html**
+
+**quantity_input_script.html**
+
+(JS file)
+
+![quantity_input_script](/readme-assets/quantity-input-script.png)
+
+**add_product.html**
+
+![add_product](/readme-assets/add_product.png)
+
+**edit_product.html**
+
+![edit_product](/readme-assets/edit_product.png)
+
+**product_detail.html**
+
+![product_detail](/readme-assets/product_detail.png)
+
+### **user_profiles html**
+
+**profile.html**
+
+![profile](/readme-assets/profilehtml.png)
+
+### **CSS Validation**
+
+- No errors or warnings were found when passing through the official [W3C (Jigsaw)](https://jigsaw.w3.org/css-validator/#validate_by_uri) validator.
+
+### **checkout app css**
+
+**checkout.css**
+
+![checkout css](/readme-assets/checkoutcss.png)
+
+### **user_profiles app css**
+
+**profile.css**
+
+![profile css](/readme-assets/profilecss.png)
+
+### **base.css**
+
+![base css](/readme-assets/basecss.png)
+
+### **Python Validation**
+
+- No errors were found when the code was passed through Valentin Bryukhanov's [online validation tool](http://pep8online.com/). According to the reports, the code is [Pep 8-compliant](https://legacy.python.org/dev/peps/pep-0008/). This checking was done manually by copying python code from all the files and pasting it into the validator.
+
+- Although there were no errors, I did receive warnings about lines being too long and imports being unused. I decided against manually fixing all of these lines as they did not affect the code. Using "python3 -m flake8" I got a list of these lines.
+
+![flake8](/readme-assets/flake8.png)
+
+### **Lighthouse Reports**
+
+**Home Page**
+
+![Home page lighthouse](/readme-assets/homepage-lighthouse.png)
+
+**Products Page**
+
+![Products page lighthouse](/readme-assets/products-lighthouse.png)
+
+**Shopping basket Page**
+
+![Basket lighthouse](/readme-assets/basket-lighthouse.png)
+
+**Checkout Page**
+
+![checkout page lighthouse](/readme-assets/checkout-lighthouse.png)
+
+**Profile Page**
+
+![Profile page lighthouse](/readme-assets/products-lighthouse.png)
+
+### **Compatibility**
+
+Testing was conducted on the following browsers:
+- Chrome
+- Brave
+- Firefox
+
+The site worked and functioned as it should on all of the tested browsers.
+
+### **Responsiveness**
+
+The responsiveness was checked manually by using devtools (Chrome) throughout the whole development. It was also checked with [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb/related?hl=en) Chrome extension.
+
+![Responsiveness test](/readme-assets/responsive.png)
+
+The screens shown above (from left to right) are:
+- Large laptop 1440 x 900
+- iPhone 8/7/6 Plus
+- Galaxy S9/S8 Plus
+- iPad
+
+## **Bugs**
+
+I came across one major bug during this project. When trying to deploy my project I received an error regarding some of my dependencies. I couldn't figure out how to fix the issue and ended up contacting Student Support. After a while the tutor I was chatting with (John) realised that dj_database_url needed to be at an earlier release. I then had to return django_database_url to the earlier version (0.5.0) and create a runtime.txt file specifying which version of django to run on heroku (3.9.14). When I did these two things the deployment went through fine.
+
+![deployment error](/readme-assets/deployment-error.png)
+
+![runtime.txt](/readme-assets/runtime.png)
+
+## **Marketing**
+
+### **Facebook Page**
+
+I created a Facebook page for GK Ireland in order to market the site on the web.
+The page has a profile picture, cover photo, general information, a few posts and a link to the site.
+
+There is a link to the Facebook page [here](https://www.facebook.com/profile.php?id=100086035780598).
+
+In case the page is taken down, here are some screenshots:
+
+![Facebook Page 1](/readme-assets/facebook-1.png)
+
+![Facebook Page 2](/readme-assets/facebook-2.png)
+
+### **MailChimp**
+
+I also added a form from MailChimp in the footer to allow site users to sign up to a GK Ireland monthly newsletter if they wish. Although the users who sign up won't actually receive a newsletter, if the site were to one day become a real e-commerce store, I would defintely create a newsletter to be sent out.
+
+![MailChimp](/readme-assets/mailchimp.png)
+
+## **Deployment**
+
+### **Heroku**
+
+The website is hosted on Heroku and can be accessed by visiting this [link](https://gk-ireland.herokuapp.com/).
+
+
+The process for deploying the website to Heroku is as follows:
+
+1. Create a Heroku account if you don't already have one.
+
+2. Create a new app on Heroku.
+
+    1. Go to the [Heroku dashboard](https://dashboard.heroku.com/apps).
+    2. Click on the "New" button.
+    3. Click on the "Create new app" button.
+    4. Choose a name for your app.
+    5. Choose a region.
+    6. Click on the "Create app" button.
+
+3. In your app go to the "Resources" tab.
+
+    - Add a Heroku Postgres database.
+
+4. In your app go to the "Settings" tab, press "Reveal Config Vars", and add the following config vars if they are not already set:
+
+    1. ```AWS_ACCESS_KEY_ID``` = AWS key.
+    2. ```AWS_SECRET_ACCESS_KEY``` = AWS secret key.
+    3. ```DATABASE_URL``` = The url of your heroku postgres database.
+    4. ```EMAIL_HOST_PASS``` = Email host password.
+    5. ```EMAIL_HOST_USER``` = Host email.
+    6. ```SECRET_KEY``` = A secret key for your app.
+    7. ```STRIPE_PUBLIC_KEY``` = Stripe key.
+    8. ```STRIPE_SECRET_KEY``` = Stripe secret key.
+    9. ```STRIPE_WH_SECRET``` = Stripe webhook key.
+    10. ```USE_AWS``` = Set to True.
+    11. ```DISABLE_COLLECTSTATIC``` = 1 during development. Remove this when deploying to production.
+
+5. In your app go to the "Deploy" tab.
+
+    1. If it's already possible, connect your Heroku account to your GitHub account and then click on the "Deploy" button.
+    2. If not, you need to copy the Heroku CLI command to connect your heroku app and your local repository.
+
+        - ```heroku git:remote -a <your-heroku-app-name>```
+
+6. Go to your local repository.
+
+7. Login to your Heroku account in your terminal and connect your local repository to your heroku app.
+
+    1. ```heroku login -i``` - Enter all your Heroku credentials it will ask for.
+    2. Paste the command you copied from step 5 into your terminal.
+
+8. Create Procfile.
+
+    For this project I used gunicorn, so in my case I had the following Procfile:
+    - ```web: gunicorn gkireland.wsgi:application``` - This runs the app on heroku.
+
+9. Create ```requirements.txt```. This can be done by running the following command:
+
+    - ```pip freeze --local > requirements.txt```
+
+10. Add and commit all changes.
+
+11. Push your changes to Heroku.
+
+    - ```git push heroku master```
+    or
+    - ```git push heroku main```
+
+12. Check the logs of your app in heroku dashboard and make sure everything is working.
+
+## **Credits**
+- [Django](https://www.djangoproject.com/) for the framework.
+- [Bootstrap](https://getbootstrap.com/): for the templates.
+- [Django-allauth](https://django-allauth.readthedocs.io/) for the authentication library.
+- [Font awesome](https://fontawesome.com/): for the free access to icons.
+- [Heroku](https://www.heroku.com/): for the free hosting of the website.
+- [AWS](https://aws.amazon.com/): for the free access to the image/static file hosting service.
+- [Stripe](https://stripe.com/en-ie): for the free payment processing.
+- [Coolors](https://coolors.co/): for providing a free platform to generate your own colour palette.
+- [Postgresql](https://www.postgresql.org/): for providing a free database.
+- [Google Fonts](https://fonts.google.com/): for providing a free platform to use Google Fonts.
+- [KenBroTech](https://www.youtube.com/c/KenBroTech): for the django tutorials.
+- [Code Institute](https://codeinstitute.net/ie/): for all of the course material and also the Boutique Ado walkthrough project which I relied heavily on for this.
+
+_*This site is for training purposes only, the company is fictional and no orders will be charged or products received.* _
