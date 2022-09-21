@@ -1,108 +1,195 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **GK Ireland**
 
-Welcome joeyo991,
+![Home Page](/readme-assets/gkireland-home.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## **About**
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The live site can be accessed by this [link](https://gk-ireland.herokuapp.com/).
 
-## Gitpod Reminders
+GK Ireland is an online store that sells goalkeeper gloves and accessories.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## **User Experience Design**
 
-`python3 -m http.server`
+### **Strategy**
 
-A blue button should appear to click: _Make Public_,
+Developed to give goalkeepers all they need in one place.
 
-Another blue button should appear to click: _Open Browser_.
+### **Target Audience**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Soccer players, particularly goalkeepers.
 
-A blue button should appear to click: _Make Public_,
+## **User Stories**
 
-Another blue button should appear to click: _Open Browser_.
+### **Customer/Site User Goals**
+- As a shopper I can view a list of products so that I can select something to purchase
+- As a shopper I can view individual product details so that I can learn more about each product
+- As a shopper I can view the total of my purchases so that I can avoid spending too much
+- As a Site User I can easily register for an account so that I can have a personal account and be able to view my profile
+- As a Site User I can easily login or out so that I can access my personal account information
+- As a Site User I can easily recover my password in case I forget it so that I can recover access to my account
+- As a Site User I can receive an email confirmation after registering so that I can verify that my account registration was successful
+- As a Site User I can have a personalized profile so that I can view my order history/confirmations and save my payment information
+- As a Shopper I can sort the list of available products so that I can easily identify the best priced, best rated and categorically sorted products
+- As a Shopper I can easily select the size and quantity of the products I am purchasing so that I don't accidentally select the wrong product quantity or size
+- As a shopper I can view items in my bag so that I can identify the total cost of my purchase and the items I will receive
+- As a shopper I can adjust the quantity of individual items in my bag so that I can easily make changes to my purchase
+- As a shopper I can easily enter my payment information so that checkout quickly with no hassle
+- As a shopper I can feel my personal and payment information is secure so that I can confidently provide the needed information to make a purchase
+- As a shopper I can view a summary of my order so that I can verify my order was correct
+- As a shopper I can receive an email confirmation after checking out so that I can keep the confirmation of my purchases for my records
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### **Store Owner/Admin Goals**
+- As a Store Owner I can add products so that I can update my store catalogue
+- As a Store Owner I can edit/update products so that I can alter prices, descriptions, images and other information
+- As a Store Owner I can delete products so that I can remove items that are no longer for sale
 
-To log into the Heroku toolbelt CLI:
+## **Technologies Used**
+### **Languages:**
+- [Python](https://www.python.org/downloads/release/python-385/): the primary language used to develop the server-side of the website.
+- [JS](https://www.javascript.com/): the primary language used to develop interactive components of the website.
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML): the markup language used to create the website.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/css): the styling language used to style the website.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### **Frameworks and Libraries:**
+- [Django](https://www.djangoproject.com/): python framework used to create all the backend logic of the website.
+- [Bootstrap](https://getbootstrap.com/): HTML and CSS templates used throughout the site.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### **Databases**
+- [SQLite](https://www.sqlite.org/): was used as a database during the development stage of the website.
+- [PostgreSQL](https://www.postgresql.org/): the database used to store all the data.
 
-------
+### **Other tools**
+- [Git](https://git-scm.com/): the version control system used to manage the code.
+- [Pip3](https://pypi.org/project/pip/): the package manager used to install the dependencies.
+- [AWS](https://aws.amazon.com/): Used to host the applications static and media files.
+- [Psycopg2](https://www.python.org/dev/peps/pep-0249/): the database driver used to connect to the database.
+- [Django-allauth](https://django-allauth.readthedocs.io/en/latest/): the authentication library used to create the user accounts.
+- [Heroku](https://dashboard.heroku.com/): the hosting service used to host the website.
+- [GitHub](https://github.com/): used to host the website's source code.
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/open/): was used to debug the website.
+- [Font Awesome](https://fontawesome.com/): was used to create the icons used in the website.
+- [W3C Validator](https://validator.w3.org/): was used to validate HTML5 code for the website.
+- [W3C CSS validator](https://jigsaw.w3.org/css-validator/): was used to validate CSS code for the website.
+- [PEP8](https://pep8.org/): was used to validate Python code for the website.
+- [Stripe](https://stripe.com/): Used to process card payments.
 
-## Release History
+## **Features**
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### **Home Page**
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+The home page is designed to draw users in with colours that pop and also with a picture of one of Ireland's best goalkeepers, Gavin Bazunu.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Home Page](/readme-assets/gkireland-home.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### **Navbar**
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Navbar](/readme-assets/navbar.png)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+The navbar remains at the top of the site at all times, giving the users easy access to it.
+It contains the logo, which acts as a link to the home page.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![Logo Link](/readme-assets/logo-link.png)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+When one of the the options on the navbar is clicked, a dropdown menu appears revealing my choices for the user to choose from.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![All Products dropdown](/readme-assets/all-products.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![Gloves dropdown](/readme-assets/gloves.png)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![Clothing dropdown](/readme-assets/clothing.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+If a user is not signed in and they click the account icon, they are given the option to register for an account, or sign in if they have one already.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![Account dropdown (logged out)](/readme-assets/account.png)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+If the user is signed in, they can view their profile or log out.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Account dropdown (logged in)](/readme-assets/account_in.png)
 
-------
+If a superuser/admin clicks the account icon, they have the option to enter product management.
 
-## FAQ about the uptime script
+![Account (superuser)](/readme-assets/account_super.png)
 
-**Why have you added this script?**
+The shopping basket icon directs the user to their basket. If there is items in their basket, the price will be visible.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+![Navbar basket](/readme-assets/nav-basket.png)
 
-**How will this affect me?**
+The navbar also contains a search bar so that the user can search for a specific item.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![Searchbar](/readme-assets/searchbar.png)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+On mobile screens, the navbar is compressed down into a dropdown menu.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+![Mobile navbar](/readme-assets/mobile-nav.png)
 
-**So….?**
+![Mobile dropdown](/readme-assets/mobile-dropdown.png)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### **Products Page**
 
-**Can I opt out?**
+The products page displays all products to the user. They are displayed in a grid and each item shows their name, price, category and image.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![Products Page](/readme-assets/products-page.png)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+It also contains a dropdown menu which allows the user to sorth the products in whatever way they like.
 
-**Anything more?**
+![Products sorting dropdown](/readme-assets/products-sort.png)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### **Product Detail**
 
----
+The product detail page allows the user to get a better look at an individual item.
+The user can read the description, pick a size and the amount of the product they want to add to their basket.
 
-Happy coding!
+![Product detail](/readme-assets/product-detail.png)
+
+For superusers/admins, they also have the option to delete or edit the item from this page.
+
+![Product detail admin](/readme-assets/product-detail-admin.png)
+
+### **Shopping Basket**
+
+ The shopping basket allows users to store items until they are ready to complete their order. It also gives them a chance to review their order before completing it. Clicking the Secure checkout button will bring the user to the checkout form.
+
+ ![Basket](/readme-assets/basket.png)
+
+ ### **Checkout Form**
+
+ This is where the user enters their payment and shipping details in order to complete the transaction. They also get one last look at their order summary.
+
+ ![Checkout form](/readme-assets/checkout-form.png)
+
+The checkout form uses Stripe to take debit card transactions.
+
+![Stripe](/readme-assets/stripe.png)
+
+### **Order Confirmation**
+
+When the user completes an order, they are redirected to the order confirmation page where they are given a summary of their order and a notification that an email was sent containing a summary also.
+
+![Order confirmation](/readme-assets/order-confirmation.png)
+
+### **User Profile**
+
+If the customer chooses to, they can create an account which allows them to save their default delivery information. The user can do this manually, or by selecting the option for it to save automatically upon order completion. They also get a list of past orders which they can view at any time.
+
+![User Profile](/readme-assets/profile.png)
+
+
+### **Product Management**
+
+Superusers/admins can manage the products available on the site. They can add, edit and delete products.
+
+![Add product](/readme-assets/add-product.png)
+
+![Edit product](/readme-assets/edit-product.png)
+
+### **Footer**
+
+The sites footer contains links to the social media sites and also a form to allow users to sign up for the GK Ireland newsletter.
+
+![Footer](/readme-assets/footer.png)
+
+### **404 Page**
+
+If for some reason there is an error with the site, there is a custom 404 page which lets the user know there has been an error and gives them a link back to the home page.
+
+![404 Page](/readme-assets/404page.png)
