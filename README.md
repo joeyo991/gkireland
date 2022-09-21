@@ -193,3 +193,108 @@ The sites footer contains links to the social media sites and also a form to all
 If for some reason there is an error with the site, there is a custom 404 page which lets the user know there has been an error and gives them a link back to the home page.
 
 ![404 Page](/readme-assets/404page.png)
+
+### **Sign Up Page**
+
+This page allows the user to create an account.
+
+![Sign Up page](/readme-assets/sign-up.png)
+
+### **Log In Page**
+
+This page allows the user to sign in if they have created an account.
+
+![Login page](/readme-assets/login.png)
+
+## Future Improvements and Features
+
+### **Wish list**
+
+In the future I would like for there to be a wish list feature where the user can save items they like so that they can purchase them in the future.
+
+### **Bigger Catalogue**
+
+I think if this were to be a real business/store, the site would need a much bigger catalogue of items.
+
+### **Product Ratings**
+
+In the future it could be a good idea to add a feature which allows users to rate the products they have purchased.
+
+## **Design**
+
+The central theme of the site is simplicity of use. It is aimed to guide the user to the best experience. I used the boutique ado project as an inspiration.
+
+### **Colour Scheme**
+
+![Colour Scheme](/readme-assets/colors.png)
+
+I used this colour scheme because black and white always work well together, but I also though that the green made everything pop.
+
+### **Typography**
+
+Then main font used in the application is Lato. It's known for its round edges and is one of the most popular fonts on Google fonts and widely used pretty much everywhere.
+
+### **Imagery**
+
+I used this image for the home page because Gavin Bazunu is one of Ireand's best talents. He is a young Irish goalkeeper and an inspiration to many. I thought it was fitting for an Irish goalkeeping store.
+
+![Background Image](/readme-assets/homepage-background-cropped.jpg)
+
+## **Testing**
+
+### **Testing User Stories**
+
+| Customer/Site User Goals | Requirement met |
+| ------------------------- | --------------- |
+| As a shopper I can view a list of products so that I can select something to purchase | Yes |
+| As a shopper I can view individual product details so that I can learn more about each product | Yes |
+| As a shopper I can view the total of my purchases so that I can avoid spending too much | Yes |
+| As a Site User I can easily register for an account so that I can have a personal account and be able to view my profile | Yes |
+| As a Site User I can easily login or out so that I can access my personal account information | Yes |
+| As a Site User I can easily recover my password in case I forget it so that I can recover access to my account | Yes |
+| As a Site User I can receive an email confirmation after registering so that I can verify that my account registration was successful | Yes |
+|  As a Site User I can have a personalized profile so that I can view my order history/confirmations and save my payment information | Yes |
+| As a Shopper I can sort the list of available products so that I can easily identify the best priced, best rated and categorically sorted products | Yes |
+| As a Shopper I can easily select the size and quantity of the products I am purchasing so that I don't accidentally select the wrong product quantity or size | Yes |
+| As a shopper I can view items in my bag so that I can identify the total cost of my purchase and the items I will receive | Yes |
+| As a shopper I can adjust the quantity of individual items in my bag so that I can easily make changes to my purchase | Yes |
+| As a shopper I can easily enter my payment information so that checkout quickly with no hassle | Yes |
+| As a shopper I can feel my personal and payment information is secure so that I can confidently provide the needed information to make a purchase | Yes |
+| As a shopper I can view a summary of my order so that I can verify my order was correct | Yes |
+| As a shopper I can receive an email confirmation after checking out so that I can keep the confirmation of my purchases for my records | Yes |
+
+| Store Owner/Admin Goals | Requirement met |
+| ----------------------- | --------------- |
+| As a Store Owner I can add products so that I can update my store catalogue | Yes |
+| As a Store Owner I can edit/update products so that I can alter prices, descriptions, images and other information | Yes |
+| As a Store Owner I can delete products so that I can remove items that are no longer for sale | Yes |
+
+### **HTML Validation**
+
+- HTML validation was done by using the official [W3C](https://validator.w3.org/) validator. This checking was done manually by copying the view page source code (Ctrl+U) and pasting it into the validator.
+
+#### **Base Template**
+
+**base.html**
+
+![base.html validation](/readme-assets/base-validation.png)
+
+- These errors had no effect on the project and were because I was using Django.
+- There was in fact a title element in the head.
+
+![title proof](/readme-assets/title-proof.png)
+
+#### **Basket app html**
+
+**basket-total.html**
+
+![basket-total](/readme-assets/basket-total.png)
+
+**basket.html**
+
+![basket](/readme-assets/basket-val.png)
+
+**checkout-buttons.html**
+
+![checkout-buttons](/readme-assets/checkout-buttons.png)
+
