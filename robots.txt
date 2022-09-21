@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /basket/
+Disallow: https://gk-ireland.herokuapp.com/sitemap.xml
